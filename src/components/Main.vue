@@ -345,6 +345,13 @@ export default {
      for (let i of this.res) {
       this.exclusive.restaurantList.push(i);
     }
+      this.collection = [
+      this.popular,
+      this.offer,
+      this.express,
+      this.gourmet,
+      this.exclusive,
+    ];
     
           })
       }
@@ -352,15 +359,9 @@ export default {
             console.warn("error is here in parsing ",err);
           });
      
-    console.log(this.exclusive);
-    this.collection = [
-      this.popular,
-      this.offer,
-      this.express,
-      this.gourmet,
-      this.exclusive,
-    ];
-    // console.log("collection --:> ",this.collection)
+    // console.log(this.exclusive);
+  
+    console.log("collection --:> ",this.collection)
   },
 };
 </script>
