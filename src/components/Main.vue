@@ -342,9 +342,17 @@ export default {
                 }
               });
             });
-      for (let i in this.res) {
+     for (let i of this.res) {
       this.exclusive.restaurantList.push(i);
     }
+    
+          })
+      }
+    ).catch((err) => {
+            console.warn("error is here in parsing ",err);
+          });
+     
+    console.log(this.exclusive);
     this.collection = [
       this.popular,
       this.offer,
@@ -352,12 +360,6 @@ export default {
       this.gourmet,
       this.exclusive,
     ];
-          })
-      }
-    ).catch((err) => {
-            console.warn("error is here in parsing ",err);
-          });
-    
     // console.log("collection --:> ",this.collection)
   },
 };
