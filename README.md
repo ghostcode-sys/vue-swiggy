@@ -1,5 +1,10 @@
 # swiggy
 
+# See deployment
+---
+https://swiggy-vue-pro.herokuapp.com/
+-----
+
 ## Project setup
 ```
 npm install
